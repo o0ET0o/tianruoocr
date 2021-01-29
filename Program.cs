@@ -18,7 +18,7 @@ namespace TrOCR
         [STAThread]
         public static void Main(string[] args)
         {
-            var programStarted = new EventWaitHandle(false, EventResetMode.AutoReset, "天若OCR文字识别", out var needNew);
+            var programStarted = new EventWaitHandle(false, EventResetMode.AutoReset, "截图识字", out var needNew);
             if (!needNew)
             {
                 programStarted.Set();
@@ -43,7 +43,7 @@ namespace TrOCR
                     Start_set = ""
                 }.ShowDialog();
             }
-            Task.Factory.StartNew(CheckUpdate);
+            //Task.Factory.StartNew(CheckUpdate);
             Application.Run(new FmMain());
         }
 
@@ -79,7 +79,7 @@ namespace TrOCR
                 else
                 {
                     Process.Start("Data\\update.exe", " " + json["main_url"].Value<string>() + " " + json["pan_url"].Value<string>() + " " +
-                                                      Path.Combine(Application.ExecutablePath, "天若OCR文字识别.exe"));
+                                                      Path.Combine(Application.ExecutablePath, "截图识字.exe"));
                     Environment.Exit(0);
                 }
             }
@@ -114,7 +114,7 @@ namespace TrOCR
                 }
 
                 IniHelper.SetValue("配置", "接口", "搜狗");
-                IniHelper.SetValue("配置", "开机自启", "True");
+                IniHelper.SetValue("配置", "开机自启", "False");
                 IniHelper.SetValue("配置", "快速翻译", "True");
                 IniHelper.SetValue("配置", "识别弹窗", "True");
                 IniHelper.SetValue("配置", "窗体动画", "窗体");
@@ -134,8 +134,8 @@ namespace TrOCR
                 IniHelper.SetValue("代理", "需要密码", "False");
                 IniHelper.SetValue("代理", "服务器账号", "");
                 IniHelper.SetValue("代理", "服务器密码", "");
-                IniHelper.SetValue("更新", "检测更新", "True");
-                IniHelper.SetValue("更新", "更新间隔", "True");
+                IniHelper.SetValue("更新", "检测更新", "False");
+                IniHelper.SetValue("更新", "更新间隔", "False");
                 IniHelper.SetValue("更新", "间隔时间", "24");
                 IniHelper.SetValue("截图音效", "自动保存", "True");
                 IniHelper.SetValue("截图音效", "音效路径", "Data\\screenshot.wav");

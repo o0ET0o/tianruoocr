@@ -383,7 +383,7 @@ namespace TrOCR
         {
             HelpWin32.SetForegroundWindow(StaticValue.mainHandle);
             ReplaceForm replaceForm = new ReplaceForm(this);
-            if (this.txt_flag == "天若幽心")
+            if (this.txt_flag == "ET")
             {
                 replaceForm.Text = "识别替换";
                 replaceForm.Location = base.PointToScreen(new Point((base.Width - replaceForm.Width) / 2, (base.Height - replaceForm.Height) / 2));
@@ -406,7 +406,7 @@ namespace TrOCR
         {
             if (!File.Exists("cvextern.dll"))
             {
-                MessageBox.Show("请从蓝奏网盘中下载cvextern.dll大小约25m，点击确定自动弹出网页。\r\n将下载后的文件与 天若OCR文字识别.exe 这个文件放在一起。");
+                MessageBox.Show("请从蓝奏网盘中下载cvextern.dll大小约25m，点击确定自动弹出网页。\r\n将下载后的文件与 .exe 这个文件放在一起。");
                 Process.Start("https://www.lanzous.com/i1ab3vg");
                 return;
             }
@@ -556,7 +556,7 @@ namespace TrOCR
             set
             {
                 this.txt_flag = value;
-                if (this.txt_flag == "天若幽心")
+                if (this.txt_flag == "ET")
                 {
                     this.toolStripToolBar.Items.AddRange(new ToolStripItem[]
                     {
@@ -765,7 +765,7 @@ namespace TrOCR
             if (e.Control && e.KeyCode == Keys.F)
             {
                 ReplaceForm replaceForm = new ReplaceForm(this);
-                if (this.txt_flag == "天若幽心")
+                if (this.txt_flag == "ET")
                 {
                     replaceForm.Text = "识别替换";
                     replaceForm.Location = base.PointToScreen(new Point((base.Width - replaceForm.Width) / 2, (base.Height - replaceForm.Height) / 2));
@@ -1168,7 +1168,7 @@ namespace TrOCR
         {
             if (!File.Exists("cvextern.dll"))
             {
-                MessageBox.Show("请从蓝奏网盘中下载cvextern.dll大小约25m，点击确定自动弹出网页。\r\n将下载后的文件与 天若OCR文字识别.exe 这个文件放在一起。");
+                MessageBox.Show("请从蓝奏网盘中下载cvextern.dll大小约25m，点击确定自动弹出网页。\r\n将下载后的文件与 .exe 这个文件放在一起。");
                 Process.Start("https://www.lanzous.com/i1ab3vg");
                 return;
             }

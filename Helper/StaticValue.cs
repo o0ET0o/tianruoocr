@@ -73,7 +73,7 @@ namespace TrOCR.Helper
 			note = "";
 			NoteCount = 40;
 			copy_f = "无格式";
-			content = "天若OCR更新";
+			content = "更新";
 			ZH2EN = true;
 			ZH2JP = false;
 			ZH2KO = false;

@@ -341,7 +341,7 @@ namespace TrOCR
 			Height = tab_标签.Height + 50;
 			readIniFile();
 			chbox_代理服务器.CheckedChanged += chbox_代理服务器_CheckedChanged;
-			更新Button_check.Click += 更新Button_check_Click;
+			//更新Button_check.Click += 更新Button_check_Click;
 		}
 
 		private void 百度申请_Click(object sender, EventArgs e)
@@ -397,11 +397,11 @@ namespace TrOCR
 				tab_标签.Height = (int)(245.0 * Program.Factor);
 				Height = tab_标签.Height + 50;
 			}
-			if (tab_标签.SelectedTab == Page_更新)
-			{
-				tab_标签.Height = (int)(135.0 * Program.Factor);
-				Height = tab_标签.Height + 50;
-			}
+			//if (tab_标签.SelectedTab == Page_更新)
+			//{
+			//	tab_标签.Height = (int)(135.0 * Program.Factor);
+			//	Height = tab_标签.Height + 50;
+			//}
 		}
 
 		private void pic_help_Click(object sender, EventArgs e)

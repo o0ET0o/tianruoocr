@@ -93,7 +93,7 @@
 			this.RichBoxBody.Name = "htmlTextBoxBody";
 			this.RichBoxBody.ImeMode = global::System.Windows.Forms.ImeMode.HangulFull;
 			this.RichBoxBody.TabIndex = 200;
-			this.RichBoxBody.Text_flag = "天若幽心";
+			this.RichBoxBody.Text_flag = "ET";
 			this.RichBoxBody_T.ImeMode = global::System.Windows.Forms.ImeMode.HangulFull;
 			this.Trans_copy.Text = "复制";
 			this.Trans_copy.Click += new global::System.EventHandler(this.Trans_copy_Click);

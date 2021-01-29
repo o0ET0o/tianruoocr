@@ -322,7 +322,7 @@ namespace TrOCR
 				{
                     new MenuItem("显示", trayShowClick),
                     new MenuItem("设置", tray_Set_Click),
-                    new MenuItem("更新", tray_update_Click),
+                    //new MenuItem("更新", tray_update_Click),
                     new MenuItem("帮助", tray_help_Click),
                     new MenuItem("退出", trayExitClick)
                 };
@@ -1007,9 +1007,9 @@ namespace TrOCR
             {
                 var text = htmltxt.Replace("***", "");
                 var lang = CommonHelper.LangDetect(text);
-//                var url = "https://fanyi.baidu.com/gettts?lan=" + lang + "&text=" + HttpUtility.UrlEncode(text) +
-//                                   "&vol=9&per=0&spd=6&pit=4&source=web&ctp=1";
-                var url = TranslateHelper.BdTts(text, lang, 5);
+                var url = "https://fanyi.baidu.com/gettts?lan=" + lang + "&text=" + HttpUtility.UrlEncode(text) +
+                                   "&vol=9&per=0&spd=6&pit=4&source=web&ctp=1";
+                //var url = TranslateHelper.BdTts(text, lang, 5);
                 ttsData = new WebClient().DownloadData(url);
                 if (speak_copyb == "朗读" || voice_count == 0)
                 {
@@ -2159,8 +2159,8 @@ namespace TrOCR
 			{
 				split_txt = "";
 				Image image = ZoomImage((Bitmap)image_screen, 120, 120);
-                //var value = OcrHelper.SgOcr(image);
-                var value = OcrHelper.SgBasicOpenOcr(image);
+                var value = OcrHelper.SgOcr(image);
+                //var value = OcrHelper.SgBasicOpenOcr(image);
 				var jArray = JArray.Parse(((JObject)JsonConvert.DeserializeObject(value))["result"].ToString());
 				if (IniHelper.GetValue("工具栏", "分段") == "True")
 				{
@@ -2393,7 +2393,7 @@ namespace TrOCR
                     ali_table.Text = "阿里√";
                     break;
                 case "从左向右" when !File.Exists("cvextern.dll"):
-                    MessageBox.Show("请从蓝奏网盘中下载cvextern.dll大小约25m，点击确定自动弹出网页。\r\n将下载后的文件与 天若OCR文字识别.exe 这个文件放在一起。");
+                    MessageBox.Show("请从蓝奏网盘中下载cvextern.dll大小约25m，点击确定自动弹出网页。\r\n将下载后的文件与 .exe 这个文件放在一起。");
                     Process.Start("https://www.lanzous.com/i1ab3vg");
                     break;
                 case "从左向右":
@@ -2403,7 +2403,7 @@ namespace TrOCR
                     left_right.Text = "从左向右√";
                     break;
                 case "从右向左" when !File.Exists("cvextern.dll"):
-                    MessageBox.Show("请从蓝奏网盘中下载cvextern.dll大小约25m，点击确定自动弹出网页。\r\n将下载后的文件与 天若OCR文字识别.exe 这个文件放在一起。");
+                    MessageBox.Show("请从蓝奏网盘中下载cvextern.dll大小约25m，点击确定自动弹出网页。\r\n将下载后的文件与 .exe 这个文件放在一起。");
                     Process.Start("https://www.lanzous.com/i1ab3vg");
                     return;
                 case "从右向左":

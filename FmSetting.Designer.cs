@@ -76,7 +76,7 @@
             this.cbBox_翻译 = new System.Windows.Forms.CheckBox();
             this.cbBox_开机 = new System.Windows.Forms.CheckBox();
             this.tab_标签 = new System.Windows.Forms.TabControl();
-            this.Page_更新 = new System.Windows.Forms.TabPage();
+            //this.Page_更新 = new System.Windows.Forms.TabPage();
             this.更新Button_check = new System.Windows.Forms.Button();
             this.更新Button = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -99,7 +99,7 @@
             this.txt_问题反馈 = new System.Windows.Forms.TextBox();
             this.反馈Button = new System.Windows.Forms.Button();
             this.label21 = new System.Windows.Forms.Label();
-            this.Page_反馈 = new System.Windows.Forms.TabPage();
+            //this.Page_反馈 = new System.Windows.Forms.TabPage();
             this.Page_代理.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.Page_密钥.SuspendLayout();
@@ -114,7 +114,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.numbox_记录)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tab_标签.SuspendLayout();
-            this.Page_更新.SuspendLayout();
+            //this.Page_更新.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numbox_间隔时间)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_help)).BeginInit();
@@ -123,7 +123,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_翻译文本)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_文字识别)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.Page_反馈.SuspendLayout();
+            //this.Page_反馈.SuspendLayout();
             this.SuspendLayout();
             // 
             // Page_代理
@@ -789,8 +789,8 @@
             this.tab_标签.Controls.Add(this.Page_快捷键);
             this.tab_标签.Controls.Add(this.Page_密钥);
             this.tab_标签.Controls.Add(this.Page_代理);
-            this.tab_标签.Controls.Add(this.Page_更新);
-            this.tab_标签.Controls.Add(this.Page_反馈);
+            //this.tab_标签.Controls.Add(this.Page_更新);
+            //this.tab_标签.Controls.Add(this.Page_反馈);
             this.tab_标签.Location = new System.Drawing.Point(10, 2);
             this.tab_标签.Name = "tab_标签";
             this.tab_标签.SelectedIndex = 0;
@@ -800,17 +800,17 @@
             // 
             // Page_更新
             // 
-            this.Page_更新.BackColor = System.Drawing.Color.White;
-            this.Page_更新.Controls.Add(this.更新Button_check);
-            this.Page_更新.Controls.Add(this.更新Button);
-            this.Page_更新.Controls.Add(this.groupBox5);
-            this.Page_更新.Location = new System.Drawing.Point(4, 22);
-            this.Page_更新.Name = "Page_更新";
-            this.Page_更新.Padding = new System.Windows.Forms.Padding(3);
-            this.Page_更新.Size = new System.Drawing.Size(390, 329);
-            this.Page_更新.TabIndex = 5;
-            this.Page_更新.Text = "更新";
-            this.Page_更新.UseVisualStyleBackColor = true;
+            //this.Page_更新.BackColor = System.Drawing.Color.White;
+            //this.Page_更新.Controls.Add(this.更新Button_check);
+            //this.Page_更新.Controls.Add(this.更新Button);
+            //this.Page_更新.Controls.Add(this.groupBox5);
+            //this.Page_更新.Location = new System.Drawing.Point(4, 22);
+            //this.Page_更新.Name = "Page_更新";
+            //this.Page_更新.Padding = new System.Windows.Forms.Padding(3);
+            //this.Page_更新.Size = new System.Drawing.Size(390, 329);
+            //this.Page_更新.TabIndex = 5;
+            //this.Page_更新.Text = "更新";
+            //this.Page_更新.UseVisualStyleBackColor = true;
             // 
             // 更新Button_check
             // 
@@ -1032,16 +1032,16 @@
             // 
             // Page_反馈
             // 
-            this.Page_反馈.BackColor = System.Drawing.Color.White;
-            this.Page_反馈.Controls.Add(this.label21);
-            this.Page_反馈.Controls.Add(this.反馈Button);
-            this.Page_反馈.Controls.Add(this.txt_问题反馈);
-            this.Page_反馈.Location = new System.Drawing.Point(4, 22);
-            this.Page_反馈.Name = "Page_反馈";
-            this.Page_反馈.Padding = new System.Windows.Forms.Padding(3);
-            this.Page_反馈.Size = new System.Drawing.Size(390, 329);
-            this.Page_反馈.TabIndex = 8;
-            this.Page_反馈.Text = "反馈";
+            //this.Page_反馈.BackColor = System.Drawing.Color.White;
+            //this.Page_反馈.Controls.Add(this.label21);
+            //this.Page_反馈.Controls.Add(this.反馈Button);
+            //this.Page_反馈.Controls.Add(this.txt_问题反馈);
+            //this.Page_反馈.Location = new System.Drawing.Point(4, 22);
+            //this.Page_反馈.Name = "Page_反馈";
+            //this.Page_反馈.Padding = new System.Windows.Forms.Padding(3);
+            //this.Page_反馈.Size = new System.Drawing.Size(390, 329);
+            //this.Page_反馈.TabIndex = 8;
+            //this.Page_反馈.Text = "反馈";
             // 
             // FmSetting
             // 
@@ -1080,7 +1080,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tab_标签.ResumeLayout(false);
-            this.Page_更新.ResumeLayout(false);
+            //this.Page_更新.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numbox_间隔时间)).EndInit();
@@ -1090,8 +1090,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_翻译文本)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_文字识别)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.Page_反馈.ResumeLayout(false);
-            this.Page_反馈.PerformLayout();
+            //this.Page_反馈.ResumeLayout(false);
+            //this.Page_反馈.PerformLayout();
             this.ResumeLayout(false);
 
 		}
@@ -1126,7 +1126,7 @@
 
 		private global::System.Windows.Forms.TabControl tab_标签;
 
-		private global::System.Windows.Forms.TabPage Page_更新;
+		//private global::System.Windows.Forms.TabPage Page_更新;
 
 		private global::System.Windows.Forms.GroupBox groupBox3;
 
@@ -1247,7 +1247,7 @@
 		private global::System.Windows.Forms.Button btn_音效路径;
 
 		private global::System.Windows.Forms.CheckBox chbox_取色;
-        private System.Windows.Forms.TabPage Page_反馈;
+        //private System.Windows.Forms.TabPage Page_反馈;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Button 反馈Button;
         private System.Windows.Forms.TextBox txt_问题反馈;
