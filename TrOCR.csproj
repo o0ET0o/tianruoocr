@@ -215,7 +215,6 @@
     <Content Include="Data\update.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="截图识字.png" />
     <None Include="DLL\pinyin.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
