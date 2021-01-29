@@ -982,7 +982,7 @@
             // pictureBox6
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.White;
-            this.pictureBox6.Image = global::TrOCR.Properties.Resources.头像;
+           // this.pictureBox6.Image = global::TrOCR.Properties.Resources.头像;
             this.pictureBox6.Location = new System.Drawing.Point(12, 15);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(84, 82);
